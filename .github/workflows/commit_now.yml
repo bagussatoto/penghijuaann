@@ -6,11 +6,10 @@ on:
       email:
         description: 'EMail'
         required: true
-        default: 'binsarjr121@gmail.com'
-      username:
+        default: 'bagusbudisatoto2001@gmail.com
         description: 'Username'
         required: true
-        default: 'binsarjr'
+        default: 'bagussatoto'
       commit:
         description: 'Commit'
         required: true
