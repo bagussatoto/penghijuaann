@@ -8,28 +8,21 @@ updates:
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-      interval: 'wakatime' # See documentation for possible values
-      interval_count: 1 # Number of intervals before the next update
-      start_time: '00:00' # Time of day to start the update
-      timezone: 'UTC' # Timezone of the start_time
-      weekday: 'monday' # Day of the week to start the update
-      weekday_offset: 0 # Number of days to offset the weekday
-
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
-    schedule:
-      interval: 'wakatime' # See documentation for possible values
-      interval_count: 1 # Number of intervals before the next update
-      start_time: '00:00' # Time of day to start the update
-      timezone: 'UTC' # Timezone of the start_time
-      weekday: 'tuesday' # Day of the week to start the update
-      weekday_offset: 0 # Number of days to offset the weekday_offset
-
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
-    schedule:
-      interval: 'wakatime' # See documentation for possible values
-      interval_count: 1 # Number of intervals before the next update
-      start_time: '00:00' # Time of day to start the update
-      timezone: 'UTC' # Timezone of the start_time
-      weekday: 'wednesday' # Day of the week to start the update
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+    ignore:
+      - 'node_modules'
+      - 'bower_components'
+      - 'vendor'
+      - 'public'
+      - 'dist'
+      - 'build'
+      - 'bin'
+      - 'test'
+      - 'spec'
+      - 'tests'
+      - 'tmp'
+      - 'log'
+      - 'cache'
+      
